@@ -1,0 +1,273 @@
+/*====================================================
+                DEFAULT VALUES:
+
+                Font Family                 : Roboto Condensed
+                
+                Greenish Blue               : #2196f3       (Buttons, Icons, Links, Lines & Backgrounds)
+                Steel Gray                  : #41464b       (Headings)
+                light Gray                  : #61666b       (Heading Second)
+                Gray                        : #717171       (Paragraphs)
+                Gray extra light            : #f5f5f5       (Content Background)
+                White                       : #fff          (Text With Black Backgrounds)
+                Black                       : #000 
+
+======================================================*/
+
+@import url('https://fonts.googleapis.com/css?family=Hind:400,600');
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Hind', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Roboto', sans-serif;
+    color: #41464b;
+    text-transform: uppercase;
+}
+
+a {
+    font-family: 'Hind', sans-serif;
+    color: #2196f3;
+}
+
+p {
+    font-family: 'Hind', sans-serif;
+    color: #64707b;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+@media (min-width: 1600px) {
+    p {
+        font-family: 'Hind', sans-serif;
+        color: #64707b;
+        font-size: 16px;
+        font-weight: 300;
+    }
+}
+
+
+/*====================================================
+                  BUTTON
+======================================================*/
+
+.btn-general {
+    background-color: transparent;
+    text-align: center;
+    border-width: 1px;
+    border-radius: 0px;
+    font-size: 16px;
+    padding: 10px 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.btn-white {
+    border-color: #2196f3;
+    background-color: #2196f3;
+    color: #fff;
+}
+
+.btn-white:hover,
+.btn-white:focus {
+    background-color: transparent;
+    color: #2196f3;
+    cursor: pointer;
+}
+
+.btn-green {
+    border-color: #2196f3;
+    color: #2196f3;
+}
+
+.btn-green:hover,
+.btn-green:focus {
+    background-color: #2196f3;
+    color: #fff;
+    cursor: pointer;
+}
+
+/*====================================================
+               TITLE CONTENT (Generic)
+======================================================*/
+
+.title-bar {
+    padding: 100px 0;
+}
+
+.title-bar h1 {
+    color: #41464b;
+    text-align: center;
+    font-weight: 700;
+    margin: 20px auto 10px auto;
+}
+
+.title-bar .heading-border {
+    width: 60px;
+    height: 10px;
+    background-color: #2196f3;
+    margin: 0 auto 20px auto;
+}
+
+.heading-border-light {
+    width: 30px;
+    height: 5px;
+    background-color: #2196f3;
+    margin: 0 0 20px 0;
+}
+
+.title-bar p {
+    color: #717171;
+}
+
+.title-bar p {
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.5;
+    padding-bottom: 40px;
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+.title-bar .title-but {
+    margin: 0;
+    background-color: transparent;
+    text-align: center;
+}
+
+@media (max-width: 575px) {
+
+    .title-bar {
+        padding: 50px 0;
+    }
+
+    .title-bar h1 {
+        color: #41464b;
+        font-size: 30px;
+        text-align: center;
+        font-weight: 700;
+        margin: 20px auto 10px auto;
+    }
+
+    .title-bar p {
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.5;
+        padding-bottom: 40px;
+        margin: 0 auto;
+        max-width: 700px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .title-bar p {
+        font-size: 16px;
+    }
+}
+
+/*====================================================
+                   NEW
+======================================================*/
+
+    #service-h {
+        padding: 120px 0 50px;
+    }
+
+    .service-h-desc {
+        padding: 50px 10px 90px 60px;
+    }
+
+    .new_most {
+        padding: 20px;
+        margin: 50px -60px 70px 35px;
+        box-shadow: 3px 3px 8px 1px #505050;
+        border: 1px solid #2196f3;
+    }
+
+    .service-h-tab {
+        position: relative;
+        margin: 20px 0;
+    }
+
+    .service-h-tab .nav-tabs>a {
+        border-radius: 0;
+        width: 190px;
+        text-align: center;
+        height: 55px;
+        line-height: 40px;
+        border: 1px solid #ddd;
+    }
+
+    .service-h-tab .nav-tabs>a.active {
+        color: #fff;
+        border: 1px solid #2196f3;
+        background: #2196f3;
+    }
+
+    .service-h-tab .tab-content .tab-pane {
+        padding: 20px 20px 0px 10px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1199px) {
+        #service-h .col-md-6 {
+            -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+            max-width: 100%!important;
+        }
+        .new_most {
+            margin: 50px auto 70px auto;
+            box-shadow: 3px 3px 8px 1px #505050;
+            border: 1px solid #2196f3;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+
+        .new_most {
+            box-shadow: 3px 3px 8px 1px #505050;
+            border: 1px solid #2196f3;
+        }
+    }
+
+    @media (max-width: 767px) {
+
+        #service-h {
+            padding: 30px 0 0px;
+        }
+
+        .new_most {
+            margin: 50px auto 70px auto;
+            box-shadow: 3px 3px 8px 1px #505050;
+            border: 1px solid #2196f3;
+        }
+
+        .service-h-tab .nav-tabs>a {
+            border-radius: 0;
+            width: 100%;
+            text-align: center;
+            height: 55px;
+            line-height: 40px;
+            border: 1px solid #ddd;
+        }
+    }
+
+    @media (max-width: 420px) {
+        .new_most {
+            margin: 50px auto 70px auto;
+            box-shadow: 3px 3px 8px 1px #505050;
+            border: 1px solid #2196f3;
+        }
+
+        .service-h-desc {
+            padding: 50px 10px 90px 10px;
+        }
+    }
